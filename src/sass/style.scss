@@ -3,3 +3,30 @@
 @import "base/mixins";
 
 
+* {
+    font-family: 'MuseoModerno', sans-serif;
+    margin: 0;
+
+}
+.container {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #0D0D0D;
+}
+@import "blocks/header";
+
+@import "blocks/promo";
+@import "blocks/benefits";
+
+
+@import "blocks/buttons";
+@import "blocks/media";
+

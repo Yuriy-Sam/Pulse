@@ -1,0 +1,131 @@
+@media (max-width: 1200px) {
+    // .promo {
+    //     max-height: 650px;
+    // }
+
+}
+@media (max-width: 951px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            img {
+                width: 200px;
+            } 
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 15px;
+            }
+        }
+        &__phone {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+    }
+    .button {
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+        &_main {
+            margin-top: 67px;
+            width: 250px;
+            height: 50px;
+            font-size: 14px;
+        }
+    
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    
+    }
+    .benefits {
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+    
+        }
+        &__item {
+            padding-top: 60px;
+            text-align: center;
+            width: 270px;
+            padding-right: 0px;
+
+        }
+    }
+}
+@media (max-width: 575px) {
+        .button {
+        width: 100px;
+        height: 25px;
+        font-size: 8px;
+        &_main {
+            margin-top: 67px;
+            width: 250px;
+            height: 50px;
+            font-size: 14px;
+        }
+    
+    }
+    .header {
+        &__logo {
+            img {
+                width: 150px;
+            } 
+        }
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__icon {
+            width: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-right: 0px;
+            img {
+                margin-bottom: 20px;
+            }
+    
+        }
+    
+    
+    }
+}
