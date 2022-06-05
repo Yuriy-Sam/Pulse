@@ -19,7 +19,7 @@
     //     total.textContent = slides.length;
     //     current.textContent =  slideIndex;
     // }
-    
+
     slidesField.style.width = 100 * slides.length + '%';
     slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
@@ -147,6 +147,7 @@
     function deleteNotDigits(str) {
         return +str.replace(/\D/g, '');
     }
+
 // }
 
 // export default slider;

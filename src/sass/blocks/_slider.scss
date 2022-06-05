@@ -1,14 +1,12 @@
 .slider {
-    width: 100%;
+    max-width: 100%;
     max-height: 580px + 81px + 81px;
 
     box-sizing: border-box;
     padding: 81px 0px ;
     &_block {
-        // height: 580px;
         position: relative;
-        width: 100%;
-        margin-top:50px;
+        max-width: 950px;
         display:flex;
         // flex-direction:column;
         align-items:center;
@@ -30,7 +28,7 @@
     }
     &_wrapper {
         
-        width:100%;
+        width: 100%;
         margin: 0 66px;
         // box-shadow:0 4px 30px rgba(0,0,0,.25);
     }
@@ -43,11 +41,11 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: auto;
+        // height: auto;
         // height:750px;
         img {
             
-            width:100%;
+            width: 100%;
             // height:100%;
             object-fit:cover;
         }
