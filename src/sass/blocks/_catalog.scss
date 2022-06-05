@@ -1,0 +1,204 @@
+
+.catalog {
+    padding-bottom: 80px;
+
+    
+    
+    &__tabs {
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+        margin-top: 46px;
+        cursor: pointer;
+
+    }
+    &__tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        // line-height: 50px;
+        width: 222px;
+        height: 52px;
+        background: rgba(0, 0, 0, 0.0001);
+        border: 2px solid #D0D0D0;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        transform: skewX(-25deg);
+        margin-right: 10px;
+        transition: 0.5s all;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            background-color: $main-color;
+            border: none;
+            color: #fff;
+            box-shadow: 3px 3px 15px $main-color;
+        }
+        
+    }
+    &__content {
+        margin-top: 57px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &_active {
+            display: flex;
+        }
+    }
+    &__item {
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        width: 293px;
+        height: 442px;
+        background: #FFFFFF;
+        border: 2px solid #E8E8E8;
+
+        &:nth-child(3n+2) {
+            // margin: 0 10px 20px 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            &:last-child {
+                // margin: 0 0px 20px 10px;
+                margin-right: 0px;
+
+            }
+            
+        }
+
+        &_img {
+            max-width: 100%;
+            height: 200px;
+        }
+        &_subtitle {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &_descr {
+            margin-top: 15px;
+
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &_link {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            // text-decoration-line: underline;
+            color: $main-color;
+            text-align: center;
+            text-decoration-line: underline;
+
+
+
+        }
+        hr {
+            background: #E8E8E8;
+            border-bottom: 0;
+            margin: 17px 0;
+        }
+        &_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_prices {
+        }
+        &_oldprice {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &_price {
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+        }
+        &_wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+
+        }
+        &_content {
+            margin-right: 0px;
+            width: 50%;
+            transition: 0.5s all;
+
+            transform: translateX(-100%);
+            &_active {
+                margin-right: 20px;
+                transform: translateX(0%);
+            }
+        }
+        &_list {
+            position: relative;
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+
+            margin-left: 20px;
+            width: 50%;
+            transition: 0.5s all;
+
+            transform: translateX(0%);
+            &_link {
+                position: absolute;
+                padding: 0;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 10px));
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                text-decoration-line: underline;
+                color: $main-color;
+                transition: 0.5s all;
+    
+            }
+            &_active {
+                margin-left: 0px;
+                transform: translateX(-100%);
+            }
+            li {
+                margin-bottom: 5px;
+                position: relative;
+                text-align: left;
+                padding-left: 15px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 7px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}

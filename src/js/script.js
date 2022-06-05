@@ -1,18 +1,14 @@
+import slider from './modules/slider';
 
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu_item'),
-    hamburger = document.querySelector('.hamburger');
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('menu_active');
+window.addEventListener('DOMContentLoaded', function() {
+    slider({
+        container: '.container',
+        slide: '.slider_slide',
+        nextArrow: '.slider_next',
+        prevArrow: '.slider_prev',
+        // totalCounter: '#total',
+        // currentCounter: '#current',
+        wrapper: '.slider_wrapper',
+        field: '.slider_inner'
     });
-
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
-        })
-    })
-})
+});

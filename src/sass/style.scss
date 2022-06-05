@@ -9,35 +9,24 @@
 
 }
 .container {
-    width: 950px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 0 20px;
 
 }
 
-.title {
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    color: #0D0D0D;
-    text-transform: uppercase;
 
-    &_consultation{
-        width: 800px;
-        font-size: 36px;
-        line-height: 54px;
-        color: #FFFFFF;
-        text-align: left;
+@import "blocks/titles";
+@import "blocks/buttons";
 
-    }
-}
 @import "blocks/header";
 
 @import "blocks/promo";
 @import "blocks/advantages";
 @import "blocks/consultation";
 @import "blocks/forms";
+@import "blocks/slider";
+@import "blocks/catalog";
 
-@import "blocks/buttons";
 @import "blocks/media";
 
